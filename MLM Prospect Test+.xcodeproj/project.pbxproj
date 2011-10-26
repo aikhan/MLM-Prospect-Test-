@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C352BDA614583B3A0001C4C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C352BDA514583B3A0001C4C4 /* UIKit.framework */; };
+		C352BDA814583B3A0001C4C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C352BDA714583B3A0001C4C4 /* Foundation.framework */; };
+		C352BDAA14583B3A0001C4C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C352BDA914583B3A0001C4C4 /* CoreGraphics.framework */; };
+		C352BDB014583B3A0001C4C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C352BDAE14583B3A0001C4C4 /* InfoPlist.strings */; };
+		C352BDB214583B3A0001C4C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C352BDB114583B3A0001C4C4 /* main.m */; };
+		C352BDB614583B3A0001C4C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C352BDB514583B3A0001C4C4 /* AppDelegate.m */; };
+		C352BDB914583B3A0001C4C4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C352BDB814583B3A0001C4C4 /* MasterViewController.m */; };
+		C352BDBC14583B3A0001C4C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C352BDBB14583B3A0001C4C4 /* DetailViewController.m */; };
+		C352BDBF14583B3A0001C4C4 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C352BDBD14583B3A0001C4C4 /* MasterViewController.xib */; };
+		C352BDC214583B3A0001C4C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C352BDC014583B3A0001C4C4 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C352BDA114583B3A0001C4C4 /* MLM Prospect Test+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MLM Prospect Test+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352BDA514583B3A0001C4C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C352BDA714583B3A0001C4C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C352BDA914583B3A0001C4C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C352BDAD14583B3A0001C4C4 /* MLM Prospect Test+-Info.plist */ = {isa = PBXFileReference; path = "MLM Prospect Test+-Info.plist"; sourceTree = "<group>"; };
+		C352BDAF14583B3A0001C4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C352BDB114583B3A0001C4C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C352BDB314583B3A0001C4C4 /* MLM Prospect Test+-Prefix.pch */ = {isa = PBXFileReference; path = "MLM Prospect Test+-Prefix.pch"; sourceTree = "<group>"; };
+		C352BDB414583B3A0001C4C4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C352BDB514583B3A0001C4C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C352BDB714583B3A0001C4C4 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		C352BDB814583B3A0001C4C4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		C352BDBA14583B3A0001C4C4 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		C352BDBB14583B3A0001C4C4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C352BDBE14583B3A0001C4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		C352BDC114583B3A0001C4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C352BD9E14583B3A0001C4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352BDA614583B3A0001C4C4 /* UIKit.framework in Frameworks */,
+				C352BDA814583B3A0001C4C4 /* Foundation.framework in Frameworks */,
+				C352BDAA14583B3A0001C4C4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C352BD9614583B3A0001C4C4 = {
+			isa = PBXGroup;
+			children = (
+				C352BDAB14583B3A0001C4C4 /* MLM Prospect Test+ */,
+				C352BDA414583B3A0001C4C4 /* Frameworks */,
+				C352BDA214583B3A0001C4C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C352BDA214583B3A0001C4C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C352BDA114583B3A0001C4C4 /* MLM Prospect Test+.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C352BDA414583B3A0001C4C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C352BDA514583B3A0001C4C4 /* UIKit.framework */,
+				C352BDA714583B3A0001C4C4 /* Foundation.framework */,
+				C352BDA914583B3A0001C4C4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C352BDAB14583B3A0001C4C4 /* MLM Prospect Test+ */ = {
+			isa = PBXGroup;
+			children = (
+				C352BDB414583B3A0001C4C4 /* AppDelegate.h */,
+				C352BDB514583B3A0001C4C4 /* AppDelegate.m */,
+				C352BDB714583B3A0001C4C4 /* MasterViewController.h */,
+				C352BDB814583B3A0001C4C4 /* MasterViewController.m */,
+				C352BDBA14583B3A0001C4C4 /* DetailViewController.h */,
+				C352BDBB14583B3A0001C4C4 /* DetailViewController.m */,
+				C352BDBD14583B3A0001C4C4 /* MasterViewController.xib */,
+				C352BDC014583B3A0001C4C4 /* DetailViewController.xib */,
+				C352BDAC14583B3A0001C4C4 /* Supporting Files */,
+			);
+			path = "MLM Prospect Test+";
+			sourceTree = "<group>";
+		};
+		C352BDAC14583B3A0001C4C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C352BDAD14583B3A0001C4C4 /* MLM Prospect Test+-Info.plist */,
+				C352BDAE14583B3A0001C4C4 /* InfoPlist.strings */,
+				C352BDB114583B3A0001C4C4 /* main.m */,
+				C352BDB314583B3A0001C4C4 /* MLM Prospect Test+-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C352BDA014583B3A0001C4C4 /* MLM Prospect Test+ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352BDC514583B3A0001C4C4 /* Build configuration list for PBXNativeTarget "MLM Prospect Test+" */;
+			buildPhases = (
+				C352BD9D14583B3A0001C4C4 /* Sources */,
+				C352BD9E14583B3A0001C4C4 /* Frameworks */,
+				C352BD9F14583B3A0001C4C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MLM Prospect Test+";
+			productName = "MLM Prospect Test+";
+			productReference = C352BDA114583B3A0001C4C4 /* MLM Prospect Test+.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C352BD9814583B3A0001C4C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Semantic Notion Inc";
+			};
+			buildConfigurationList = C352BD9B14583B3A0001C4C4 /* Build configuration list for PBXProject "MLM Prospect Test+" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C352BD9614583B3A0001C4C4;
+			productRefGroup = C352BDA214583B3A0001C4C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C352BDA014583B3A0001C4C4 /* MLM Prospect Test+ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C352BD9F14583B3A0001C4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352BDB014583B3A0001C4C4 /* InfoPlist.strings in Resources */,
+				C352BDBF14583B3A0001C4C4 /* MasterViewController.xib in Resources */,
+				C352BDC214583B3A0001C4C4 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C352BD9D14583B3A0001C4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352BDB214583B3A0001C4C4 /* main.m in Sources */,
+				C352BDB614583B3A0001C4C4 /* AppDelegate.m in Sources */,
+				C352BDB914583B3A0001C4C4 /* MasterViewController.m in Sources */,
+				C352BDBC14583B3A0001C4C4 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C352BDAE14583B3A0001C4C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C352BDAF14583B3A0001C4C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C352BDBD14583B3A0001C4C4 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C352BDBE14583B3A0001C4C4 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		C352BDC014583B3A0001C4C4 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C352BDC114583B3A0001C4C4 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C352BDC314583B3A0001C4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C352BDC414583B3A0001C4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C352BDC614583B3A0001C4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLM Prospect Test+/MLM Prospect Test+-Prefix.pch";
+				INFOPLIST_FILE = "MLM Prospect Test+/MLM Prospect Test+-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C352BDC714583B3A0001C4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLM Prospect Test+/MLM Prospect Test+-Prefix.pch";
+				INFOPLIST_FILE = "MLM Prospect Test+/MLM Prospect Test+-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C352BD9B14583B3A0001C4C4 /* Build configuration list for PBXProject "MLM Prospect Test+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352BDC314583B3A0001C4C4 /* Debug */,
+				C352BDC414583B3A0001C4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352BDC514583B3A0001C4C4 /* Build configuration list for PBXNativeTarget "MLM Prospect Test+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352BDC614583B3A0001C4C4 /* Debug */,
+				C352BDC714583B3A0001C4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C352BD9814583B3A0001C4C4 /* Project object */;
+}
