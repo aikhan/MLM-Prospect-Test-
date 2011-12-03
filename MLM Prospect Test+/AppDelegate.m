@@ -9,20 +9,28 @@
 #import "AppDelegate.h"
 
 #import "MasterViewController.h"
+#import "SplashViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
+@synthesize count, marksArray;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.count = 1;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
     MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-    self.window.rootViewController = self.navigationController;
+    [self.navigationController setNavigationBarHidden:YES];
+//    self.window.rootViewController = self.navigationController;
+    marksArray = [[NSMutableArray alloc]initWithObjects:@"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0", @"0",@"0",@"0", nil];
+    SplashViewController *splash = [[SplashViewController alloc] init];
+    self.window.rootViewController = splash;
+    [splash showSplash];
     [self.window makeKeyAndVisible];
     return YES;
 }

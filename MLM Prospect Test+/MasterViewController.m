@@ -7,8 +7,9 @@
 //
 
 #import "MasterViewController.h"
-
+#import "TestViewController.h"
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @implementation MasterViewController
 
@@ -18,7 +19,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+      //  self.title = NSLocalizedString(@"Master", @"Master");
+        [self.navigationController setNavigationBarHidden:YES];
     }
     return self;
 }
@@ -67,35 +69,9 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 1;
-}
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
-
-    // Configure the cell.
-    cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
-    return cell;
-}
 
 /*
 // Override to support conditional editing of the table view.
@@ -135,12 +111,16 @@
 }
 */
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (!self.detailViewController) {
-        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
+
+
+- (IBAction)startTest:(id)sender{
+    
+    NSLog(@"This is a string");
+    TestViewController *testVC = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:testVC animated:YES];
+    AppDelegate * appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
+    appDelegate.count++;
+    
 }
 
 @end
